@@ -26,12 +26,12 @@ public class Main {
                 size++;
             }
         }
-        int counter = 0;
         String[] result = new String[size];
+        size = 0;
         for (int i = 0; i < strings.length; i++) {
             if (strings[i].length() <= 3) {
-                result[counter] = strings[i];
-                counter++;
+                result[size] = strings[i];
+                size++;
             }
         }
         return result;
